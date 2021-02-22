@@ -2,31 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ReadInput : MonoBehaviour
 {
-    private string input;
+    public InputField input;
+    private string user;
+
     public GameObject panel;
-    public Text user;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void SetUser() 
     {
-        user.text = input;
-    }
+        user = input.text;
+        PlayerPrefs.SetString("User", user);
+        if (Input.GetKey(KeyCode.Return))
+        {
+            SceneManager.LoadScene("Lab_2 1");
+        }
 
-    public void ReadStringInput(string x)
-    {
-        input = x;
-        //if (Input.GetKey(KeyCode.Return))
-        //{
-        //    panel.SetActive(false);
-        //}
-        Debug.Log(input);
     }
 }
