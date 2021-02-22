@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GridSpace.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\ReadInput.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
