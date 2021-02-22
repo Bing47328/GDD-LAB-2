@@ -56,12 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GridSpace.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\ReadInput.cs" />
     <Compile Include="Assets\Scripts\PlayerName.cs" />
+    <Compile Include="Assets\Scripts\GridSpace.cs" />
+    <Compile Include="Assets\SetVol.cs" />
+    <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\Descent\Movement.cs" />
+    <Compile Include="Assets\Radius.cs" />
+    <Compile Include="Assets\Response.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\cyberpunk-street-files\cyberpunk-street-files\public-license.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
